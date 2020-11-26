@@ -1,0 +1,248 @@
+<head>
+<script type="text/x-mathjax-config"> 
+    MathJax.Hub.Config({ 
+        "HTML-CSS": { scale: 200, linebreaks: { automatic: true } }, 
+        SVG: { linebreaks: { automatic:true } }, 
+        displayAlign: "center",
+        menuSettings: {zoom: "Hover", zscale: "150%"}});
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<style>
+
+@font-face {
+  font-family: "Times New Roman";
+  src: url("file:////home/israel/Área de Trabalho/revista/fontes/times-new-roman-14.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("file:////home/israel/Área de Trabalho/revista/fontes/times-new-roman-bold.otf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: "Times New Roman";
+  src: url("file:////home/israel/Área de Trabalho/revista/fontes/times-new-roman-italic.ttf") format('truetype');
+  font-weight: italic;
+  font-style: italic;
+
+}
+
+h1.titulo{
+font-family: "Times New Roman", Serif, Times;
+font-size: 16pt;
+margin-left: 10%;
+margin-right: 10%;
+}
+h2.autores{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+}
+h2.resumo{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 10%;
+margin-right: 10%;
+}
+h2.abstract{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 10%;
+margin-right: 10%;
+font-style: italic;
+
+}
+h2.topico{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+}
+p.resumo{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 10%;
+margin-right: 10%;
+text-align: justify;
+line-height: 0.8cm;
+}
+p.abstract{
+font-family: "Times New Roman";
+font-size: 12pt;
+margin-left: 10%;
+margin-right: 10%;
+font-style: italic;
+text-align: justify;
+line-height: 0.8cm;
+}
+p.normal{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+text-indent: 25px;
+line-height: 1cm;
+text-align: justify;
+}
+
+p.tabela{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+line-height: 1cm;
+text-align: justify;
+}
+
+p.citacao{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 35%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+table.quadro td, table.quadro th {
+  text-align: left;
+font-size: 12pt;
+font-family: "Times New Roman", Serif, Times;
+ }
+
+table.quadro {
+  border-collapse: collapse;
+margin-left: 3%;
+margin-right: 3%;
+width: 95%;
+border: 2px solid black;
+}
+
+table.quadro th, table.quadro td {
+  padding: 15px;
+}
+p.ref{
+font-family: "Times New Roman", Serif, Times;
+font-size: 10pt;
+margin-left: 3%;
+margin-right: 2%;
+line-height: 1cm;
+text-align: justify;
+}
+table.tabela{
+  border-collapse: collapse;
+margin-left: 3%;
+margin-right: 3%;
+width: 95%;
+}
+
+table.tabela th, table.tabela td {
+  padding: 8px;
+  border-bottom: 2px solid black;
+ text-align: left;
+font-size: 12pt;
+font-family: "Times New Roman", Serif, Times;
+}
+div.referencia{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+a.rodape{
+font-family: "Times New Roman", Serif, Times;
+  font-size: 12pt;
+text-align: justify;
+}
+footer{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+ol.normal{
+list-style-type: upper-roman;
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 5%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+ol.rodape{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 2%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+ul.normal{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 5%;
+margin-right: 2%;
+line-height: 0.8cm;
+text-align: justify;
+}
+
+table.teste{
+width:80%;
+}
+table.teste td{
+text-align: justify;
+font-family: "Times New Roman";
+border-top: 1px solid black;
+font-size: 10pt;
+}
+table.modificada{
+  border-collapse: collapse;
+margin-left: 3%;
+margin-right: 3%;
+width: 95%;
+}
+
+table.modificada th, table.modificada td {
+  padding: 8px;
+ text-align: left;
+font-size: 12pt;
+font-family: "Times New Roman", Serif, Times;
+}
+p.tituloresumo{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 10%;
+margin-right: 10%;
+font-weight: bold;
+}
+p.section{
+font-family: "Times New Roman", Serif, Times;
+font-size: 12pt;
+margin-left: 3%;
+margin-right: 10%;
+font-weight: bold;
+}
+table.modificada2{
+  border-collapse: collapse;
+margin-left: 3%;
+margin-right: 3%;
+width: 95%;
+}
+
+table.modificada2 th, table.modificada2 td {
+  padding: 8px;
+ text-align: center;
+font-size: 12pt;
+font-family: "Times New Roman", Serif, Times;
+}
+
+</style>
